@@ -1,8 +1,16 @@
 # IA privada pronta
 
-**Validação atual:**14 testes de software passaram. A execução com modelo real nesta produção aguarda autorização de carga de modelo e API local; veja [o estado da validação](verificacao/STATUS.md).
+[![IA privada pronta](guia/assets/banner.jpg)](https://inematds.github.io/ia-privada-pronta/guia/)
 
-## O que entrega
+**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+
+Guia completo: https://inematds.github.io/ia-privada-pronta/guia/
+
+**Validação real em Linux:** execução sem rede externa, conversa com contexto e encerramento dos processos próprios confirmados. Os 14 testes de software passaram. O modelo leve errou o exercício de conta em documento; o resultado está registrado, sem trocar o gabarito. Veja [os resultados completos](verificacao/STATUS.md).
+
+## O que é
+
+Este kit gratuito põe uma IA para conversar com você no próprio computador. Ele serve para quem quer processamento local, sem uma empresa de IA receber cada pedido. Traz preparação do modelo, conversa, leitura de arquivo e um modo Linux com a rede bloqueada para o processo. Você precisa de Python, Ollama e memória suficiente para o modelo. Os testes reais e as limitações estão nesta página.
 
 Este kit põe uma IA para conversar com você no próprio computador, sem provedor de inferência externo. O foco é manter o processamento local: serviço próprio em endereço local, nuvem desativada e, no Linux, um modo que remove o acesso de rede do processo. O modelo padrão é Llama 3.2 3B; ele mantém as restrições do próprio modelo.
 
@@ -13,7 +21,7 @@ Este kit põe uma IA para conversar com você no próprio computador, sem proved
 - Git para clonar, ou [baixe o ZIP](https://github.com/inematds/ia-privada-pronta/archive/refs/heads/main.zip) e extraia a pasta.
 - Python 3.10 ou superior: [instalador oficial](https://www.python.org/downloads/).
 - [Ollama instalado](https://ollama.com/download), no Linux, macOS ou Windows.
-- Para o modelo padrão: aproximadamente **2 GB de download**, **8 GB de RAM recomendados**, espaço livre para os pesos e recursos para o sistema. Contexto padrão2048; o consumo real depende do runtime. GPU é opcional: CPU funciona, com desempenho diferente.
+- Para o modelo padrão: aproximadamente **2 GB de download**, **8 GB de RAM recomendados**, espaço livre para os pesos e recursos para o sistema. Contexto padrão 2048; o consumo real depende do runtime. GPU é opcional: CPU funciona, com desempenho diferente.
 - No Linux, para o modo sem rede: `bubblewrap` e `iproute2`. O modo exige namespaces de usuário permitidos pelo sistema.
 
 Verifique antes de começar:
@@ -106,3 +114,9 @@ Esses testes usam um runtime simulado e não contam como teste de modelo. O test
 [Ollama: execução local e nuvem](https://docs.ollama.com/faq) · [API local de conversa](https://docs.ollama.com/api/chat) · [Modelo padrão](https://ollama.com/library/llama3.2).
 
 Código do kit: MIT. Runtime e pesos seguem suas próprias licenças; os pesos não são redistribuídos aqui.
+
+## Se você baixou o ZIP
+
+Extraia a pasta. No Windows, abra a pasta que contém ia.py, clique na barra de endereço, digite powershell e pressione Enter. Execute os comandos Python do guia, usando py se necessário. Os atalhos preparar.cmd e conversar.cmd também funcionam com duplo clique. No Linux/macOS, abra Terminal e use cd para entrar na pasta extraída; o caminho depende de onde você salvou o ZIP. Não execute git clone se escolheu ZIP.
+
+Runtime é o programa que executa o modelo; digest é a identificação exata dos pesos; namespace de rede é uma rede separada para o processo no Linux. Se houver mudança de digest, o erro mostra os valores esperado e encontrado: confirme a versão na página oficial da tag antes de decidir atualizar digest_esperado no perfil.json. Sem confirmação, mantenha a proteção.
