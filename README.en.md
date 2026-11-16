@@ -4,6 +4,8 @@
 
 **🇧🇷 [Português](../../README.md) · 🇺🇸 [English](README.md) · 🇪🇸 [Español](../es/)**
 
+[🎬 Video: talk to your AI without internet (audio in Portuguese).](https://www.youtube.com/watch?v=TJ9omYZdIrE)
+
 Full guide: https://inematds.github.io/ia-privada-pronta/guia/en/
 
 **Real Linux validation:** execution without external network access, a conversation with context, and shutdown of the dedicated processes were confirmed. All 14 software tests passed. The lightweight model got the document calculation wrong; the result is recorded without changing the answer key. See [the full results](../../verificacao/STATUS.md).

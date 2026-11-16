@@ -4,6 +4,8 @@
 
 **🇧🇷 [Português](../../README.md) · 🇺🇸 [English](../../README.en.md) · 🇪🇸 [Español](README.es.md)**
 
+[🎬 Video: conversa con tu IA sin internet (audio en portugués).](https://www.youtube.com/watch?v=TJ9omYZdIrE)
+
 Guía completa: https://inematds.github.io/ia-privada-pronta/guia/es/
 
 **Validación real en Linux:** se confirmó la ejecución sin red externa, la conversación con contexto y el cierre de los procesos propios. Pasaron las 14 pruebas de software. El modelo ligero se equivocó en el ejercicio de cálculo del documento; el resultado está registrado, sin cambiar la respuesta correcta. Consulta [los resultados completos](../../verificacao/STATUS.md).
