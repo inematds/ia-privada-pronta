@@ -10,6 +10,7 @@ Este kit põe uma IA para conversar com você no próprio computador, sem proved
 
 ## Requisitos
 
+- Git para clonar, ou [baixe o ZIP](https://github.com/inematds/ia-privada-pronta/archive/refs/heads/main.zip) e extraia a pasta.
 - Python 3.10 ou superior: [instalador oficial](https://www.python.org/downloads/).
 - [Ollama instalado](https://ollama.com/download), no Linux, macOS ou Windows.
 - Para o modelo padrão: aproximadamente **2 GB de download**, **8 GB de RAM recomendados**, espaço livre para os pesos e recursos para o sistema. Contexto padrão2048; o consumo real depende do runtime. GPU é opcional: CPU funciona, com desempenho diferente.
